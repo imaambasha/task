@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="369dp"
+        android:layout_height="246dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <VideoView
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:id="@+id/capturedVideo"
+        android:layout_gravity="center"
+        />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="TakePhoto"
+        android:text="Take a photo"
+        />
+    <Button
+        android:id="@+id/btnTakeVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take video"
+        android:onClick="TakeVideo"
+        android:textStyle="bold"
+        />
+
+        <Button
+            android:id="@+id/nextAct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ChangeAct"
+            android:text="SurfaceView"
+             />
+    </LinearLayout>
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>

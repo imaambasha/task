@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com /tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SurfaceViewCla">
+
+    <SurfaceView
+        android:id="@+id/sfV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnSurPic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="520dp"
+            android:background="@drawable/final_custom_button"
+            />
+    </LinearLayout>
+
+</FrameLayout>
